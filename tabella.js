@@ -21,9 +21,9 @@ const form = document.querySelector("form")
             paragrafo.innerText= numeroCasuale
 
              const numeriCelle = document.querySelectorAll(".cella h3");
-    numeriCelle.forEach(cella => {
+    numeriCelle.forEach( function (cella) {
         if (cella.innerText === numeroCasuale.toString()) {
-            cella.parentElement.classList.add("opacita");
+            cella.classList.add("opacita");
         }
     });
            
